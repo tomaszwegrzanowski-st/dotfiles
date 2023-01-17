@@ -1,9 +1,8 @@
 [user]
-	name = Tomasz Wegrzanowski
-	email = tomasz.wegrzanowski@sensortower.com
-	signingkey = 42739CCB1E69C7E8
+  name = Tomasz Wegrzanowski
+  email = tomasz.wegrzanowski@sensortower.com
 [init]
-	defaultBranch = master
+  defaultBranch = master
 [alias]
   co = checkout
   ci = commit
@@ -17,7 +16,10 @@
   wdiff = diff --word-diff
   cdiff = diff --word-diff-regex='.' --word-diff
   amend = ci --amend
+  hide = update-index --assume-unchanged
+  unhide = update-index --no-assume-unchanged
+  fpush = push --force
 [commit]
-	gpgsign = true
+  gpgsign = true
 [core]
-	editor = code --wait
+  editor = code --wait
