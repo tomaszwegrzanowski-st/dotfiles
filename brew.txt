@@ -1,4 +1,5 @@
 aom
+aribb24
 asdf
 autoconf
 automake
@@ -14,6 +15,8 @@ cmocka
 coreutils
 dav1d
 docutils
+faac
+fdk-aac
 ffmpeg
 flac
 fontconfig
@@ -94,8 +97,6 @@ m4
 mbedtls
 midnight-commander
 mitmproxy
-mongodb-community
-mongodb-community-shell
 mongodb-database-tools
 mongosh
 mpdecimal
@@ -128,6 +129,7 @@ rubberband
 ruby-build
 rust
 s-lang
+sdl12-compat
 sdl2
 shared-mime-info
 shellcheck
@@ -136,6 +138,7 @@ snappy
 speex
 sqlite
 srt
+svt-av1
 tesseract
 theora
 trash
@@ -155,3 +158,4 @@ zimg
 zstd
 chromedriver
 rectangle
+vlc
