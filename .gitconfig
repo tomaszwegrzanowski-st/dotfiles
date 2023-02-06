@@ -19,9 +19,10 @@
   hide = update-index --assume-unchanged
   unhide = update-index --no-assume-unchanged
   fpush = push --force
+  sw = switch
 [commit]
   gpgsign = true
 [core]
   editor = code --wait
 [push]
-	autoSetupRemote = true
+  autoSetupRemote = true
