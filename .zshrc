@@ -30,3 +30,21 @@ if type brew &>/dev/null; then
   autoload -Uz compinit
   compinit
 fi
+
+# Simplest branch name in prompt
+# from https://stackoverflow.com/questions/1128496/to-get-a-prompt-which-indicates-git-branch-in-zsh
+git_branch_test_color() {
+  local ref=$(git symbolic-ref --short HEAD 2> /dev/null)
+  if [ -n "${ref}" ]; then
+    if [ -n "$(git status --porcelain)" ]; then
+      local gitstatuscolor='%F{red}'
+    else
+      local gitstatuscolor='%F{green}'
+    fi
+    echo "${gitstatuscolor} (${ref})"
+  else
+    echo ""
+  fi
+}
+setopt PROMPT_SUBST
+PROMPT='%9c$(git_branch_test_color)%F{none} %# '

@@ -24,6 +24,9 @@ task "git:update" do
   end
 end
 
+desc "Update everything"
+task "update" => "git:update"
+
 desc "Print list of items that need doing"
 task "status" do
   inbox = []
