@@ -1,10 +1,15 @@
 ulimit -n 65536
 
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=10000000
+SAVEHIST=10000000
+
 alias l='ls -l'
 alias tt='trash'
 alias bi='bundle install'
 alias be='bundle exec'
 alias gr='pcre2grep'
+alias rja='~/overseer/bin/remote-job-adblock'
 
 setopt autocd
 
