@@ -47,6 +47,7 @@ task "status" do
       .bundle
       .cache
       .cargo
+      .clickhouse-client-history
       .config
       .docker
       .gem
@@ -56,6 +57,7 @@ task "status" do
       .local
       .mongodb
       .node_repl_history
+      .npm
       .osquery
       .python_history
       .rd
