@@ -72,6 +72,7 @@ task "status" do
       .yarnrc
       .zcompdump
       .zsh_history
+      Applications
       Library
       Movies
       Music

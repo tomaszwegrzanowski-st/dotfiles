@@ -8,13 +8,16 @@ alias l='ls -l'
 alias tt='trash'
 alias bi='bundle install'
 alias be='bundle exec'
+alias br='bundle exec rspec --order defined'
 alias gr='pcre2grep'
 alias rja='~/overseer/bin/remote-job-adblock'
+alias rj='~/overseer/bin/remote-job'
 
 setopt autocd
 
 export GIT_MERGE_AUTOEDIT=no
 export EDITOR='code -w'
+export RUBY_COVERAGE=no
 
 export PATH=~/bin:~/src/unix-utilities/bin:$PATH
 
