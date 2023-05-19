@@ -39,17 +39,17 @@ task "status" do
     next if path.symlink?
     case path.to_s
     when *%W[
-      .CFUserTextEncoding
-      .DS_Store
-      .Trash
       .asdf
       .aws
       .bundle
       .cache
       .cargo
+      .CFUserTextEncoding
       .clickhouse-client-history
+      .cocoapods
       .config
       .docker
+      .DS_Store
       .gem
       .gnupg
       .kube
@@ -62,7 +62,9 @@ task "status" do
       .python_history
       .rd
       .ssh
+      .swiftpm
       .tool-versions
+      .Trash
       .tsh
       .vim
       .viminfo
