@@ -12,6 +12,12 @@ alias br='bundle exec rspec --order defined'
 alias gr='pcre2grep'
 alias rja='~/overseer/bin/remote-job-adblock'
 alias rj='~/overseer/bin/remote-job'
+alias cp='cp -i'
+alias mv='mv -i'
+
+function rm {
+  echo "rm is not allowed, use tt command to move to trash"
+}
 
 setopt autocd
 
