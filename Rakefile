@@ -59,6 +59,8 @@ task "status" do
       .node_repl_history
       .npm
       .osquery
+      .proxyman
+      .proxyman-data
       .python_history
       .rd
       .ssh
@@ -69,6 +71,7 @@ task "status" do
       .vim
       .viminfo
       .vscode
+      .vscode-cli
       .wget-hsts
       .yarn
       .yarnrc
