@@ -97,3 +97,10 @@ task "status" do
 
   puts *inbox.sort
 end
+
+desc "Production tunnel"
+task "tunnel" do
+  Dir.chdir("adblock-web") do
+    sh "./bin/start-production-tunnel"
+  end
+end

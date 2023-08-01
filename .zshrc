@@ -21,6 +21,9 @@ function rm {
 
 setopt autocd
 
+#export ADBLOCK_RSPEC_LOGGING=1
+export RECORD_AD_TRACKER_PARAMS=1
+
 export GIT_MERGE_AUTOEDIT=no
 export EDITOR='code -w'
 export RUBY_COVERAGE=no
