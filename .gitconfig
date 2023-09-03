@@ -18,7 +18,7 @@
   amend = ci --amend --no-edit
   hide = update-index --assume-unchanged
   unhide = update-index --no-assume-unchanged
-  fpush = push --force
+  fpush = push --force-with-lease
   sw = switch
 [commit]
   gpgsign = true
