@@ -11,7 +11,7 @@ end
 
 def git_clean?(path)
   Dir.chdir(path) do
-    `git status --porcelain`.empty? and `git branch --show-current`.chomp == "master"
+    `git status --porcelain`.empty? and `git branch --show-current`.chomp =~ /\A(master|main)\z/
   end
 end
 
