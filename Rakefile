@@ -104,3 +104,8 @@ task "tunnel" do
     sh "./bin/start-production-tunnel"
   end
 end
+
+desc "Prevent laptop sleep"
+task "cafe" do
+  sh "caffeinate -d"
+end
