@@ -109,3 +109,10 @@ desc "Prevent laptop sleep"
 task "cafe" do
   sh "caffeinate -d"
 end
+
+desc "Start docker"
+task "docker" do
+  Dir.chdir("adblock-web") do
+    sh "docker-compose up"
+  end
+end

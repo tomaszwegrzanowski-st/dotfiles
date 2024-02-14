@@ -14,6 +14,7 @@ alias rja='~/overseer/bin/remote-job-adblock'
 alias rj='~/overseer/bin/remote-job'
 alias cp='cp -i'
 alias mv='mv -i'
+alias rc='bundle exec bin/rubocop-inc --parallel -b master --exclude-uncommitted-changes  -a'
 
 function rm {
   echo "rm is not allowed, use tt command to move to trash"
