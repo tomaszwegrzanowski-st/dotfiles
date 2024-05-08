@@ -116,3 +116,17 @@ task "docker" do
     sh "docker-compose up"
   end
 end
+
+desc "Start overseer docker"
+task "overseer:docker" do
+  Dir.chdir("overseer") do
+    sh "docker-compose up"
+  end
+end
+
+desc "Start overseer tunnel"
+task "overseer:tunnel" do
+  Dir.chdir("overseer") do
+    sh "./bin/production-data-proxy"
+  end
+end
