@@ -63,6 +63,7 @@ task "status" do
       .proxyman-data
       .python_history
       .rd
+      .sqlite_history
       .ssh
       .swiftpm
       .tool-versions
@@ -124,6 +125,7 @@ task "overseer:docker" do
   end
 end
 
+# It doesn't work yet due to ruby version mismatch
 desc "Start overseer tunnel"
 task "overseer:tunnel" do
   Dir.chdir("overseer") do

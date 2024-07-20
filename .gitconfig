@@ -22,6 +22,7 @@
   sw = switch
   ds = !git diff origin/master | diffstat -p1
   mm = merge origin/master
+  dm = diff origin/master
 [commit]
   gpgsign = true
 [core]
