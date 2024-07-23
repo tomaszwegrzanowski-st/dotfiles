@@ -31,6 +31,9 @@ export RUBY_COVERAGE=no
 
 export PATH=~/bin:~/src/unix-utilities/bin:$PATH
 
+# some remote job scripts crash without it
+export REMOTE_JOB_SLACK_NAME='U04HB6GL19R'
+
 # don't need both
 # eval "$(rbenv init - zsh)"
 
