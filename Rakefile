@@ -22,6 +22,9 @@ task "git:update" do
       system "git", "pull"
     end
   end
+  if `md5 <radar/Radar/CaptureObjects/GeoLookupResult.cs`.chomp != "3830ed06e8f09e4f628b1c84dee95445"
+    warn "radar/Radar/CaptureObjects/GeoLookupResult.cs has changed"
+  end
 end
 
 desc "Update everything"
