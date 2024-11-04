@@ -42,6 +42,7 @@ task "status" do
     next if path.symlink?
     case path.to_s
     when *%W[
+      .android
       .asdf
       .aws
       .bundle
@@ -53,8 +54,10 @@ task "status" do
       .config
       .docker
       .DS_Store
+      .emulator_console_auth_token
       .gem
       .gnupg
+      .gradle
       .kube
       .lesshst
       .local

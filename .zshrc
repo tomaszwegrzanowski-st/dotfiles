@@ -16,6 +16,9 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rc='bundle exec bin/rubocop-inc --parallel -b master --exclude-uncommitted-changes  -a'
 
+alias clickhouse-beta='clickhouse-client  --host localhost --port 30011 --user admin --password $(cat ~/.clickhouse-password)'
+alias clickhouse-prod='clickhouse-client  --host localhost --port 30013 --user admin --password $(cat ~/.clickhouse-password)'
+
 function rm {
   echo "rm is not allowed, use tt command to move to trash"
 }
